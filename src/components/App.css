@@ -24,3 +24,38 @@ h1 {
   padding: 10px;
   color: limegreen;
 }
+
+.displayCards {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+img {
+  height: 200px;
+  width: 70%;
+  border-radius: 3%;
+}
+
+.card {
+  background-color: rgba(255, 255, 255, 0.95);
+  border-radius: 3%;
+  margin: 10px;
+  height: 375px;
+  width: 18%;
+  padding: 20px;
+}
+
+h3 {
+  color: red;
+}
+
+.quote {
+
+}
+
+.superlative {
+
+}
