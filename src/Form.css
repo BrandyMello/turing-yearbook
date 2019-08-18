@@ -1,0 +1,16 @@
+.form {
+  display: inline-grid;
+}
+
+input {
+  height: 30px;
+  width: auto;
+  margin-bottom: 10px;
+}
+
+.submit {
+  background-color: #ff63479e;
+  border-radius: 50%;
+  height: 30px;
+  margin: 10px;
+}

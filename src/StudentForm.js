@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import './Form.css';
 
 class StudentForm extends Component {
   constructor() {
@@ -25,7 +26,7 @@ class StudentForm extends Component {
     return (
       <form className='form'>
         <input type='text' placeholder='Type name here: "Jane"' name='name' value={this.state.name} onChange={this.handleInputChange}/>
-        <input type='text' placeholder='Type favorite quote here...' name='quote' value={this.state.quote} onChange={this.handleInputChange}/>
+        <input type='text' placeholder='Type fave quote here...' name='quote' value={this.state.quote} onChange={this.handleInputChange}/>
         <input type='text' placeholder='Type superlative here...' name='superlative' value={this.state.superlative} onChange={this.handleInputChange}/>
         <button className='submit' onClick={this.handleNewStudent}>Make me a Student</button>
       </form>
