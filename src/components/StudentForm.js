@@ -5,9 +5,9 @@ class StudentForm extends Component {
   constructor() {
     super();
     this.state = {
-      studentName: '',
-      studentQuote: '',
-      studentSuperlative: ''
+      name: '',
+      quote: '',
+      superlative: ''
     }
   }
 

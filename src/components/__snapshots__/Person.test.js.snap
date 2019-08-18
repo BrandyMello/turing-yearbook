@@ -1,0 +1,39 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Person should match the snapshot 1`] = `
+<div
+  className="card"
+>
+  <img
+    alt="Jane Doe"
+    src="https://placekitten.com/200/300"
+  />
+  <h3>
+    Jane Doe
+  </h3>
+  <p
+    className="quote"
+    contentEditable="true"
+    suppressContentEditableWarning={true}
+  >
+    "
+    You got this
+    "
+  </p>
+  <p
+    className="superlative"
+    contentEditable="true"
+    suppressContentEditableWarning={true}
+  >
+    Most likely to cry
+  </p>
+  <button
+    className="remove-btn"
+    contentEditable="true"
+    onClick={[Function]}
+    suppressContentEditableWarning={true}
+  >
+    Remove
+  </button>
+</div>
+`;
