@@ -1,17 +1,14 @@
 import React from 'react';
 import './Person.css';
 
-// , removeStudent
-
-const Person = ({member, addStudent}) => {
-  console.log({member})
+const Person = ({member, addStudent, removeCard}) => {
   return (
       <div className='card'>
         <img src={member.photo} alt={member.name}/>
         <h3>{member.name}</h3>
-        <p className='quote'>"{member.quote}"</p>
-        <p className='superlative'>{member.superlative}</p>
-        <button className='remove-btn'>Remove Student</button>
+        <p className='quote' contenteditable="true">"{member.quote}"</p>
+        <p className='superlative' contenteditable="true">{member.superlative}</p>
+        <button className='remove-btn' contenteditable="true" onClick={() => removeCard(member.id)}>Remove</button>
       </div>
     )
 }

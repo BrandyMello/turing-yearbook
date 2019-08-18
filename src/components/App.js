@@ -20,10 +20,13 @@ class App extends Component {
     })
   }
 
-  // removeStudent = (id) => {
-  //   const filteredStudents = this.state.students.filter(student => student.id !== id);
-  //   this.setState({students: filteredStudents});
-  // }
+  removeCard = (id) => {
+    const key = Object.keys(this.state);
+    const filteredStaff = this.state[key[0]].filter(staffMember => staffMember.id !== id);
+    const filteredStudents = this.state[key[1]].filter(student => student.id !== id);
+    this.setState({students: filteredStudents});
+    this.setState({staff: filteredStaff});
+  }
 
   render() {
     return (
@@ -33,10 +36,10 @@ class App extends Component {
         </header>
         <main>
           <h2>Staff</h2>
-          <Cohort members={this.state.staff} addStudent={this.addStudent}/>
+          <Cohort members={this.state.staff} removeCard={this.removeCard}/>
           <h2>Students</h2>
-          <StudentForm addStudent={this.addStudent}/>
-          <Cohort members={this.state.students} addStudent={(newStudent) => this.addStudent(newStudent)}  />
+          <StudentForm addStudent={this.addStudent} removeCard={this.removeCard}/>
+          <Cohort members={this.state.students} addStudent={this.addStudent} removeCard={this.removeCard} />
         </main>
       </div>
     );
@@ -45,4 +48,3 @@ class App extends Component {
 
 export default App;
 
-// removeStudent={id => this.removeStudent(id)}
