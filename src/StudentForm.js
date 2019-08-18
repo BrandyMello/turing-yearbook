@@ -16,17 +16,17 @@ class StudentForm extends Component {
 
   handleNewStudent = (e) => {
     e.preventDefault();
-    const newStudent = {id: Date.now(), ...this.state};
+    const newStudent = {id: Date.now(), photo: 'https://placekitten.com/200/300',  ...this.state};
     this.props.addStudent(newStudent);
-    this.setState({studentName: '', studentQuote: '', studentSuperlative: ''});
+    this.setState({name: '', quote: '', superlative: ''});
   }
 
   render() {
     return (
       <form className='form'>
-        <input type='text' placeholder='Type name here: "Jane"' name='studentName' value={this.state.studentName} onChange={this.handleInputChange}/>
-        <input type='text' placeholder='Type favorite quote here...' name='studentQuote' value={this.state.studentQuote} onChange={this.handleInputChange}/>
-        <input type='text' placeholder='Type superlative here...' name='studentSuperlative' value={this.state.studentSuperlative} onChange={this.handleInputChange}/>
+        <input type='text' placeholder='Type name here: "Jane"' name='name' value={this.state.name} onChange={this.handleInputChange}/>
+        <input type='text' placeholder='Type favorite quote here...' name='quote' value={this.state.quote} onChange={this.handleInputChange}/>
+        <input type='text' placeholder='Type superlative here...' name='superlative' value={this.state.superlative} onChange={this.handleInputChange}/>
         <button className='submit' onClick={this.handleNewStudent}>Make me a Student</button>
       </form>
     )

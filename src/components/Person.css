@@ -1,0 +1,56 @@
+h1 {
+  background-color: rgba(255, 255, 255, 0.95);
+  padding: 10px;
+  color: limegreen;
+}
+
+h2 {
+  background-color: rgba(255, 255, 255, 0.95);
+  padding: 10px;
+  color: #6696EC;
+}
+
+.displayCards {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+img {
+  height: 180px;
+  width: 60%;
+  border-radius: 3%;
+}
+
+.card {
+  background-color: rgba(255, 255, 255, 0.95);
+  border-radius: 3%;
+  margin: 10px;
+  height: 420px;
+  width: 19%;
+  padding: 15px;
+}
+
+h3 {
+  color: #FF6347;
+}
+
+.quote {
+  font-style: italic;
+  font-size: 12px;
+  height: 25px;
+}
+
+.superlative {
+  color: #6696EC;
+  font-weight: bold;
+  height: 80px;
+}
+
+.remove-btn {
+  background-color: #ff63479e;
+  border-radius: 50%;
+  height: 30px;
+}

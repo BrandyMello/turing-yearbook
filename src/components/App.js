@@ -33,7 +33,7 @@ class App extends Component {
         </header>
         <main>
           <h2>Staff</h2>
-          <Cohort members={this.state.staff}/>
+          <Cohort members={this.state.staff} addStudent={this.addStudent}/>
           <h2>Students</h2>
           <StudentForm addStudent={this.addStudent}/>
           <Cohort members={this.state.students} addStudent={(newStudent) => this.addStudent(newStudent)}  />
